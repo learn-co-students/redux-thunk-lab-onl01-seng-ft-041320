@@ -1,0 +1,23 @@
+INSTRUCTIONS
+We'll have one top-level component, `App`
+import connect from react-redux
+use function mapStateToProps to connect the data to it's child presentaional component
+will have child presentational component `CatList`
+`CatList` will receive the list of cat pics from APP and render them in a series of <img> tags.
+using an Api FETCH to get cats pics
+we'll need to set up Redux and Thunk
+
+Part 1: Set UP the Store and Reducer and Action Creater
+use Redux's `createStore()` in `src/index.js`
+import `createStore` from `redux` and `Provider from react-redux`
+import a reducer, from `src/reducers/catsReducer.js`
+pass reducer into `createStore` assing return value to `store`
+store = createStore(reducer)
+wrap the APP in Provider and pass store
+setup reducer catsReducer()
+
+setup action createStore
+fetchCatgs() `src/actions/catActions`
+thunk alters the behavior of action creatore functions allowing us to return a function that takes in dispatch
+
+Part 2: Build the Container Componen
