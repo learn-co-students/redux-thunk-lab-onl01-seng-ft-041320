@@ -216,7 +216,7 @@ directly when calling the second `dispatch`.
 Now that Redux and Thunk are set up, it is time to display the retrieved data in
 our app. First, let's set up the `App` component to read from our Redux store.
 We'll do this by first importing `connect` from `react-redux`, wrapping the
-funtion around `App` on the export line. Then, we'll write a `mapStateToProps()`
+function around `App` on the export line. Then, we'll write a `mapStateToProps()`
 helper function. This function will be passed into `connect`. `connect` calls
 this function, passing in the state from the Redux store. Any key/value pairs
 returned by `mapStateToProps()` will become props in the `App` component. We can
